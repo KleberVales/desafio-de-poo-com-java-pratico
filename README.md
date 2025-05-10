@@ -75,4 +75,33 @@ Protegemos os atributos e fornecemos acesso controlado:
 
 ```
 
+Herança
+
+Criamos classes especializadas que herdam de Animal:
+
+```
+    public class Pinguim extends Animal {
+        private boolean nadaBem;
+        
+        public Pinguim(String nome, int idade, boolean nadaBem) {
+            super(nome, idade);
+            this.nadaBem = nadaBem;
+        }
+        
+        @Override
+        public void emitirSom() {
+            System.out.println(getNome() + " diz: Nheee!");
+        }
+        
+        public void deslizar() {
+            System.out.println(getNome() + " está deslizando no gelo!");
+        }
+    }
+```
+
+
+
+
+
+
 
