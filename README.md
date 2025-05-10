@@ -99,6 +99,36 @@ Criamos classes especializadas que herdam de Animal:
     }
 ```
 
+Polimorfismo
+
+Podemos tratar diferentes tipos de animais de forma uniforme:
+
+```
+    import java.util.ArrayList;
+    import java.util.List;
+    
+    public class Zoologico {
+        public static void main(String[] args) {
+            List<Animal> animais = new ArrayList<>();
+            
+            animais.add(new Leao("Simba", 5, 25.5));
+            animais.add(new Pinguim("Pingu", 2, true));
+            animais.add(new Leao("Mufasa", 10, 30.0));
+            
+            // Polimorfismo em ação
+            for(Animal animal : animais) {
+                animal.emitirSom();
+                animal.dormir();
+                
+                // Verificação de tipo para comportamentos específicos
+                if(animal instanceof Pinguim) {
+                    ((Pinguim) animal).deslizar();
+                }
+            }
+        }
+    }
+```
+
 
 
 
