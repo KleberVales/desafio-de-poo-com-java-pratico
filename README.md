@@ -40,3 +40,9 @@
         }
     }
 ```
+
+Encapsulamento
+
+Protegemos os atributos e fornecemos acesso controlado:
+
+
