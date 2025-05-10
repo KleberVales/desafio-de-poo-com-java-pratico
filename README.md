@@ -7,3 +7,5 @@
   Vamos criar um sistema simples de gerenciamento de animais em um zoológico, que nos permitirá explorar todos os conceitos de POO.
 
 2. Implementação dos Pilares da POO
+
+   Abstração
