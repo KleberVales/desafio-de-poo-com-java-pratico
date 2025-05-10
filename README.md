@@ -45,4 +45,34 @@ Encapsulamento
 
 Protegemos os atributos e fornecemos acesso controlado:
 
+```
+
+    public class Leao extends Animal {
+        private double tamanhoJuba;
+        
+        public Leao(String nome, int idade, double tamanhoJuba) {
+            super(nome, idade);
+            this.tamanhoJuba = tamanhoJuba;
+        }
+        
+        public double getTamanhoJuba() {
+            return tamanhoJuba;
+        }
+        
+        public void setTamanhoJuba(double tamanhoJuba) {
+            if(tamanhoJuba > 0) {
+                this.tamanhoJuba = tamanhoJuba;
+            } else {
+                System.out.println("Tamanho da juba deve ser positivo");
+            }
+        }
+        
+        @Override
+        public void emitirSom() {
+            System.out.println(getNome() + " diz: Roar!");
+        }
+    }
+
+```
+
 
