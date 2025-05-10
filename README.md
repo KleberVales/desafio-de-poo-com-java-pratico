@@ -11,7 +11,7 @@
    Abstração\
    Vamos criar classes que representam conceitos do mundo real:
 
-   ```
+```
        // Classe abstrata representando um animal genérico
     public abstract class Animal {
         private String nome;
