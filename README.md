@@ -10,3 +10,33 @@
 
    Abstração\
    Vamos criar classes que representam conceitos do mundo real:
+
+   ```
+       // Classe abstrata representando um animal genérico
+    public abstract class Animal {
+        private String nome;
+        private int idade;
+        
+        public Animal(String nome, int idade) {
+            this.nome = nome;
+            this.idade = idade;
+        }
+        
+        // Método abstrato - cada animal terá sua própria implementação
+        public abstract void emitirSom();
+        
+        // Método concreto
+        public void dormir() {
+            System.out.println(nome + " está dormindo...");
+        }
+        
+        // Getters e Setters
+        public String getNome() {
+            return nome;
+        }
+        
+        public int getIdade() {
+            return idade;
+        }
+    }
+```
